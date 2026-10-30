@@ -2,6 +2,14 @@
 //  NetworkManager.swift
 //  ftcScoutApp
 //
+//  Created by Jonas Jay on 10/30/26.
+//
+
+
+//
+//  NetworkManager.swift
+//  ftcScoutApp
+//
 //  Created by Jonas Jay on 9/22/26.
 //
 
@@ -21,8 +29,7 @@ class NetworkManager {
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
         
-        let accessToken = "ampheTM2NDQ6MUNDRkY2RDEtREExOS00NTZBLUEwRTAtODVDMEQ2Q0JCMzJF"
-        request.setValue("Basic \(accessToken)", forHTTPHeaderField: "Authorization")
+        request.setValue("Basic \(Secrets.apikey)", forHTTPHeaderField: "Authorization")
         
         let (data, response) = try await URLSession.shared.data(for: request)
         
