@@ -1,0 +1,9 @@
+{
+  "id" : "a9a476e4-b4f0-48a8-b5ae-e4a81bf7f472",
+  "targets" : [
+    {
+      "id" : "7fc5fd18-4809-452e-a8e8-8a4db7fe15a3",
+      "name" : "ftcScoutApp"
+    }
+  ]
+}
