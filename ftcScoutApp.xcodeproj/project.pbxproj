@@ -6,13 +6,30 @@
 	objectVersion = 110;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		DD0515783095461800C20127 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = DD0515773095461800C20127 /* CodeScanner */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		DDFB1EF93062EFEE00333A38 /* ftcScoutApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ftcScoutApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		DD051575309545FC00C20127 /* Exceptions for "ftcScoutApp" folder in "ftcScoutApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = DDFB1EF83062EFEE00333A38 /* ftcScoutApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		DDFB1EFB3062EFEE00333A38 /* ftcScoutApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				DD051575309545FC00C20127 /* Exceptions for "ftcScoutApp" folder in "ftcScoutApp" target */,
+			);
 			path = ftcScoutApp;
 			sourceTree = "<group>";
 		};
@@ -22,6 +39,7 @@
 		DDFB1EF63062EFEE00333A38 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
+				DD0515783095461800C20127 /* CodeScanner in Frameworks */,
 			);
 		};
 /* End PBXFrameworksBuildPhase section */
@@ -60,6 +78,9 @@
 				DDFB1EFB3062EFEE00333A38 /* ftcScoutApp */,
 			);
 			name = ftcScoutApp;
+			packageProductDependencies = (
+				DD0515773095461800C20127 /* CodeScanner */,
+			);
 			productName = ftcScoutApp;
 			productReference = DDFB1EF93062EFEE00333A38 /* ftcScoutApp.app */;
 			productType = "com.apple.product-type.application";
@@ -88,6 +109,9 @@
 			);
 			mainGroup = DDFB1EF03062EFEE00333A38;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				DD0515763095461800C20127 /* XCRemoteSwiftPackageReference "CodeScanner" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = DDFB1EFA3062EFEE00333A38 /* Products */;
 			projectDirPath = "";
@@ -243,7 +267,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZW2LB69RX6;
+				DEVELOPMENT_TEAM = CLJG7YST9S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -320,6 +344,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DD0515763095461800C20127 /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DD0515773095461800C20127 /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD0515763095461800C20127 /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DDFB1EF13062EFEE00333A38 /* Project object */;
 	validationLevel = 1;

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct ftcScoutAppApp: App {
@@ -13,5 +14,6 @@ struct ftcScoutAppApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: [TeamNotes.self, Question.self, Answer.self, EventCode.self])
     }
 }
