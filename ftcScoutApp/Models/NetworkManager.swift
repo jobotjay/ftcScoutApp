@@ -29,6 +29,7 @@ class NetworkManager {
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
         
+        
         request.setValue("Basic \(Secrets.apikey)", forHTTPHeaderField: "Authorization")
         
         let (data, response) = try await URLSession.shared.data(for: request)
